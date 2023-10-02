@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+    background: linear-gradient(to bottom,cadetblue,white);
+    height: 706px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar img {
+    width: 68px;
+    position: absolute;
+    margin-left: 152px;
+    top: 16px;
+}
+.navbar h1 {
+    position: relative;
+    color: white;
+    top: -19px;
+    margin-left: 24px;
+    font-size: 40px;
+    text-shadow: 4px 4px 3px black;
+}
+.temperature-converter {
+    height: 354px;
+    width: 42vw;
+    background: white;
+    margin-top: -77px;
+    margin-left: 415px;
+    position: relative;
+    top: 100px;
+    border-radius: 20px;
+    box-shadow: 3px 3px grey;
+    text-align: center;
+    padding: 38px;
+}
+.temperature-converter img{
+    width: 258px;
+    position: absolute;
+    top: 169px;
+    left: -127px;
+}
+#input-degrees {
+    height: 35px;
+    font-size: 18px;
+    width: 16vw;
+    border-radius: 8px;
+    border: 1.5px solid #aaa;
+    margin-right: 10px;
+    padding-left: 5px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#select-type {
+    height: 40px;
+    width: 16vw;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1.5px solid #aaa;
+    margin-right: 10px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#convert-button {
+    height: 40px;
+    width: 16vw;
+    background: cadetblue;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    font-weight: 18px;
+    color: white;
+    cursor: pointer;
+    display: block;
+    margin-left: 210px;
+    margin-top: 37px;
+}
+#convert-button:hover{
+    background: rgb(71, 120, 122);
+    transition-duration: 0.6s;
+}
+#result-label {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 26px;
+}
+
+#result-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e88e5;
+    margin-top: 10px;
+    margin-left: 25px;
+}

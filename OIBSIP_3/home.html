@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="navbar"> 
+        <h1>Tempo</h1>
+        <img src="photos/sun.png">
+    </nav>
+   
+    
+    <div class="temperature-converter">
+        <h2>Temperature Converter</h2>
+        <img src="photos/snowman.png">
+        <label for="input-degrees">Degrees</label>
+        <input type="number" id="input-degrees">
+        <label for="select-type">Type</label>
+        <select id="select-type">
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="celsius">Celsius</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+        <button id="convert-button">Convert</button>
+        <label id="result-label">Result:</label>
+        <h2 id="result-value"></h2>
+        
+    </div>
+    
+</body>
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const convertButton = document.getElementById("convert-button");
+    
+        convertButton.addEventListener("click", function () {
+            const degrees = parseFloat(document.getElementById("input-degrees").value);
+            const selectType = document.getElementById("select-type").value;
+            const resultElement = document.getElementById("result-value");
+    
+            if (selectType === "fahrenheit") {
+                const celsius = (degrees - 32) / 1.8;
+                const kelvin = celsius + 273.15;
+                resultElement.innerHTML = `${celsius.toFixed(2)}°C<br>${kelvin.toFixed(2)}°K`;
+            } else if (selectType === "celsius") {
+                const fahrenheit = (degrees * 1.8) + 32;
+                const kelvin = degrees + 273.15;
+                resultElement.innerHTML = `${fahrenheit.toFixed(2)}°F<br>${kelvin.toFixed(2)}°K`;
+            } else if (selectType === "kelvin") {
+                const celsius = degrees - 273.15;
+                const fahrenheit = (celsius * 1.8) + 32;
+                resultElement.innerHTML = `${fahrenheit.toFixed(2)}°F<br>${celsius.toFixed(2)}°C`;
+            }
+        });
+    });
+    
+    </script>
