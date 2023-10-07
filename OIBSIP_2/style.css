@@ -738,3 +738,12 @@ textarea{
     background: white;
     transition-duration: 0.5s;
 }
+.text-footer{
+    text-align: center;
+    padding: 3px;
+    font-family: 'ubuntu',sans-serif;
+    font-size: 14px;
+    display:flex;
+    justify-content: center;
+    background-color: darkslategray;
+  }
