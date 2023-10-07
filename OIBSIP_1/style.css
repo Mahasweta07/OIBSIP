@@ -956,3 +956,12 @@ Remove or comment-out the code block below to see how the browser will fall-back
 .podslider_gonext {
 	right : 10px;
 }
+.text-footer{
+    text-align: center;
+    padding: 3px;
+    font-family: 'ubuntu',sans-serif;
+    font-size: 14px;
+    display:flex;
+    justify-content: center;
+    background-color: darkslategray;
+  }
